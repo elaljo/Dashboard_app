@@ -1,15 +1,26 @@
-.Navbar{
-    display: flex;
-    justify-content: space-around;
-    background-color: red;
+.AppName {
+    font-weight: bolder;
+    font-size: larger;
+    padding: 6px 12px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
 }
-.AppName{
-    display: flex;
-    font-weight: bold;
+.AppName:hover {
+    background: rgba(0, 0, 0, 0.2);
 }
 .ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 20px;
+    font-weight: bold;
+}
+.li{
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: border-bottom 0.3s ease;
+}
+.li:hover{
+    border-bottom: 2px solid black;
 }

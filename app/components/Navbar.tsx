@@ -6,24 +6,24 @@ import {
     SignedOut,
     UserButton,
   } from '@clerk/nextjs'
-
+import Link from "next/link"
 import styles from "./Navbar.module.css"
 
 export default function Navbar(){
     return(
         <>
-            <div className={styles.AppName}> Dashboard </div>
+            <Link href='/'> <div className={styles.AppName}>Dashboard</div> </Link>
             <ul className={styles.ul}>
-                <li> Home </li>
-                <li> Agencies </li>
-                <li> Contacts </li>
+                <Link href='/agencies'> <li className={styles.li}> Agencies </li> </Link>
+                <Link href='/contacts'> <li className={styles.li}> Contacts </li> </Link>
             </ul>
             <div>
                 <SignedOut>
                     <SignInButton/>
+                    <SignUpButton/>
                 </SignedOut>
                 <SignedIn>
-                    <UserButton />
+                    <UserButton/>
                 </SignedIn>
             </div>
         </>

@@ -1,5 +1,11 @@
 import { SignUp } from '@clerk/nextjs'
+import styles from "./page.module.css"
+
 
 export default function Page() {
-  return <SignUp />
+    return(
+        <div className={styles.sign_up}>
+            <SignUp />
+        </div>
+    )
 }

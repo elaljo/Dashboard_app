@@ -20,7 +20,7 @@ export default function Navbar(){
             </ul>
             <div>
                 <SignedOut>
-                    <SignInButton />
+                    <SignInButton/>
                 </SignedOut>
                 <SignedIn>
                     <UserButton />

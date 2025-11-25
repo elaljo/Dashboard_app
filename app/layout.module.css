@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgb(48, 46, 46);
+    z-index: 1000;
+}
+.content {
+    margin-top: 60px; /* same as header height */
+    height: calc(100vh - 60px);
+    overflow-y: hidden;
+}

@@ -1,0 +1,15 @@
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+}
+.AppName{
+    display: flex;
+    font-weight: bold;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}

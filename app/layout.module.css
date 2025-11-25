@@ -15,5 +15,4 @@
 .content {
     margin-top: 60px; /* same as header height */
     height: calc(100vh - 60px);
-    overflow-y: hidden;
 }

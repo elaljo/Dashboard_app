@@ -9,9 +9,8 @@
     left: 0;
     right: 0;
     height: 60px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(232, 239, 255);
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 .content {

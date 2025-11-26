@@ -1,0 +1,25 @@
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px 0px 60px;
+    gap: 20px;
+    font-weight: bold;
+
+}
+.Welcome{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.P1{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 10px;
+}

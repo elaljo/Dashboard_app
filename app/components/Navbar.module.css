@@ -24,3 +24,17 @@
 .li:hover{
     border-bottom: 2px solid black;
 }
+.signBtn {
+    padding: 5px 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+}

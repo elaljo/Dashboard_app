@@ -2,12 +2,13 @@
     font-weight: bolder;
     font-size: larger;
     padding: 6px 12px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
     border-radius: 10px;
+    background: white;
     cursor: pointer;
 }
 .AppName:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
 .ul{
     display: flex;
@@ -17,19 +18,23 @@
     font-weight: bold;
 }
 .li{
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s ease;
     cursor: pointer;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    transition: border-bottom 0.3s ease;
+
 }
 .li:hover{
-    border-bottom: 2px solid black;
+    background: rgba(0, 0, 0, 0.1);
+
 }
 .signBtn {
     padding: 5px 12px;
-    background: black;
-    color: white;
+    background: #3175fc;
+    color: rgb(255, 255, 255);
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;

@@ -11,7 +11,8 @@ export default function agenciesPage(){
         <table className={styles.table}>
           <thead>
             <tr>
-              <th>Name</th>
+              <th>NO.</th>
+              <th>Agency Name</th>
               <th>State</th>
               <th>Type</th>
               <th>Population</th>
@@ -21,7 +22,8 @@ export default function agenciesPage(){
           <tbody>
             {agencies.map((agency: any, index: number) => (
               <tr key={index}>
-                <td>{index} {agency.name}</td>
+                <td>{index}</td>
+                <td>{agency.name}</td>
                 <td>{agency.state}</td>
                 <td>{agency.type}</td>
                 <td>{agency.population}</td>

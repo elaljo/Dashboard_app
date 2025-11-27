@@ -1,8 +1,8 @@
 import { loadContacts } from "@/lib/csvToJson"
 import styles from "./contacts.module.css"
 
-export default function contactspage(){
-    const contacts = loadContacts();
+export default async function contactspage(){
+    const contacts = await loadContacts();
 
   return (
     <div className={styles.container}>
@@ -12,12 +12,12 @@ export default function contactspage(){
           <thead>
             <tr>
                 <th>No.</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Title</th>
-              <th>Department</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Title</th>
+                <th>Department</th>
             </tr>
           </thead>
           <tbody>

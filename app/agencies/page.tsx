@@ -1,8 +1,8 @@
 import { loadAgencies } from "@/lib/csvToJson"
 import styles from "./agencies.module.css"
 
-export default function agenciesPage(){
-    const agencies = loadAgencies();
+export default async function agenciesPage(){
+    const agencies = await loadAgencies();
 
   return (
     <div className={styles.container}>

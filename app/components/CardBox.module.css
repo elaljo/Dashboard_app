@@ -1,0 +1,39 @@
+.Box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    height: 30vh;
+    min-height: 250px;
+    width: 40vh;
+    min-width: 300px;
+    max-width: 100%;
+    padding: 20px 15px;
+}
+.svg{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border-radius: 20px;
+}
+.agency{
+    display: flex;
+    font-size: 24px;
+    gap: 20px;
+    align-items: center;
+}
+.boxDetails{
+    margin-left: 30px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.BoxBtn{
+    width: fit-content;
+    align-self: end;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    background: #3175fc;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}

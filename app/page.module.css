@@ -1,25 +1,36 @@
 .HomePage{
     display: flex;
     flex-direction: column;
-    padding: 20px 60px 0px 60px;
+    align-items: center;
+    padding: 40px 60px 0px 60px;
     gap: 20px;
     font-weight: bold;
+}
 
+.HomePage h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
-.Welcome{
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-}
+
 .P1{
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    max-width: 800px;
 }
-.details{
+
+.D2 {
+    text-align: center;
+    max-width: 800px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.Boxes{
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    gap: 10px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }

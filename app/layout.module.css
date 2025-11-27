@@ -9,8 +9,8 @@
     left: 0;
     right: 0;
     height: 60px;
-    background: rgb(232, 239, 255);
-    backdrop-filter: blur(10px);
+    background: transparent;
+    backdrop-filter: blur(15px);
     z-index: 1000;
 }
 .content {

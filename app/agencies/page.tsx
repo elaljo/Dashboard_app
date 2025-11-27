@@ -13,7 +13,7 @@ export default function agenciesPage(){
             <tr>
               <th>NO.</th>
               <th>Agency Name</th>
-              <th>State</th>
+              <th>State/county</th>
               <th>Type</th>
               <th>Population</th>
               <th>Website</th>
@@ -24,7 +24,7 @@ export default function agenciesPage(){
               <tr key={index}>
                 <td>{index}</td>
                 <td>{agency.name}</td>
-                <td>{agency.state}</td>
+                <td>{agency.state}{agency.county && <><br />({agency.county})</>}</td>
                 <td>{agency.type}</td>
                 <td>{agency.population}</td>
                 <td>{agency.website}</td>

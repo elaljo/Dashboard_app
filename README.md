@@ -13,11 +13,11 @@ It uses Next.js 16 and Clerk for a simple, modern, and secure setup.
 
 Data is displayed in a clean, scrollable table.
 ## 👥 Contacts Viewer With Daily Limit
-● Users can view up to 50 contacts per day.
+• Users can view up to 50 contacts per day.
 
-● Scrolling through the table automatically counts each viewed contact.
+• Scrolling through the table automatically counts each viewed contact.
 
-● Once the daily limit is reached:
+• Once the daily limit is reached:
 
   ○ A modal appears asking the user to upgrade (no payment system required).
 

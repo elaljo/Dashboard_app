@@ -37,6 +37,14 @@
     max-width: 800px;
     animation: fadein 1s ease 1s forwards;
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .Boxes{
     margin-top: 30px;
     display: flex;
@@ -44,4 +52,14 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    opacity: 0;
+    animation: fadein 1s ease 1.5s forwards;
+}
+.P2{
+  margin-top: 40px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0;
+  animation: fadein 1s ease 3s forwards;
 }

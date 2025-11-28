@@ -8,81 +8,113 @@
       transform: translateY(0);
     }
 }
-.AppName {
-    display: inline-block;
-    font-weight: bolder;
-    font-size: larger;
-    padding: 6px 12px;
-    transition: all 0.7s ease-in-out;
-    animation: FromUp ease 0.5s forwards;
-    border-radius: 10px;
-    background: white;
-    cursor: pointer;
-}
-.AppName:hover {
-    background: rgba(0, 0, 0, 0.1);
-}
 .ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 20px;
-    font-weight: bold;
-}
-.liAgency{
-    padding: 6px 12px;
-    border-radius: 10px;
-    background: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    animation: FromUp 1s ease forwards;
-
-}
-.liAgency{
-    padding: 6px 12px;
-    border-radius: 10px;
-    background: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    animation: FromUp 1.5s ease forwards;
-}
-.liAgency:hover{
-    background: rgba(0, 0, 0, 0.1);
+    gap: 6px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.02);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(14px);
 }
 
-.liContact{
-    padding: 6px 12px;
-    border-radius: 10px;
-    background: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    animation: FromUp 2s ease forwards;
-
+.navItemWrapper {
+    list-style: none;
 }
-.liContact:hover{
-    background: rgba(0, 0, 0, 0.1);
+
+.navItem {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    color: rgba(15, 23, 42, 0.7);
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.25s ease, transform 0.18s ease, background 0.25s ease;
+}
+
+.navItemHome {
+    padding: 6px 10px;
+    min-width: 36px;
+}
+
+.navItem:hover {
+    color: rgba(15, 23, 42, 0.95);
+    transform: translateY(-1px);
+}
+
+.navItemActive {
+    color: #0f172a;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
+}
+
+.navLabel {
+    position: relative;
+    z-index: 1;
+}
+
+.navGlow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.navItemActive .navGlow {
+    opacity: 1;
+}
+
+.navIcon {
+    position: relative;
+    z-index: 1;
+    font-size: 1.05rem;
+    line-height: 1;
 }
 .signINbtn{
     padding: 5px 12px;
     background: #3175fc;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
     animation: FromUp 2s ease forwards;
+    box-shadow: 0 10px 25px rgba(49, 117, 252, 0.35);
+    transition: background 0.25s ease, transform 0.18s ease, box-shadow 0.25s ease;
+}
+
+.signINbtn:hover{
+    background: #275fca;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 32px rgba(49, 117, 252, 0.5);
 }
 .signUPbtn {
     padding: 5px 12px;
     background: #3175fc;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
     animation: FromUp 2.5s ease forwards;
+    box-shadow: 0 10px 25px rgba(49, 117, 252, 0.35);
+    transition: background 0.25s ease, transform 0.18s ease, box-shadow 0.25s ease;
+}
+
+.signUPbtn:hover {
+    background: #275fca;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 32px rgba(49, 117, 252, 0.5);
 }
 .buttons{
     display: flex;
@@ -91,8 +123,17 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* left | center | right */
+    justify-content: space-between;
     width: 100%;
+    padding: 10px 16px;
+    border-radius: 18px;
+    background: radial-gradient(circle at top left, rgba(49, 117, 252, 0.08), transparent 60%), rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    z-index: 40;
 }
 .left {
     flex: 1;
@@ -107,4 +148,8 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+.brandLink {
+    text-decoration: none;
 }

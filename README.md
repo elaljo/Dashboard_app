@@ -1,7 +1,7 @@
 # Dashboard Application – Agencies & Contacts Viewer
-This project is a demo built for a take-home assignment, showcasing authentication, CSV data handling, row-tracking logic, and a clean dashboard experience.
+○ This project is a demo built for a take-home assignment, showcasing authentication, CSV data handling, row-tracking logic, and a clean dashboard experience.
 
-It uses Next.js 16 and Clerk for a simple, modern, and secure setup.
+○ It uses Next.js 16 and Clerk for a simple, modern, and secure setup.
 # 🚀 Features
 
 ## 🔐 User Authentication (Clerk)
@@ -51,4 +51,4 @@ Data is displayed in a clean, scrollable table.
 
 • CLERK_SECRET_KEY=your_key_here
 ## 4️⃣ Run Development Server
-●npm run dev
+● npm run dev

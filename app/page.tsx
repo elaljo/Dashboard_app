@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <div className={styles.HomePage}>
-      <h1> Welcome {welcomeSuffix} to our interactive dashboard!</h1>
+      <h1> WELCOME {welcomeSuffix} TO OUR INTERACTIVE DASHBOARD!</h1>
       <p className={styles.P1}> Here, you can explore all our agencies and their associated employee contacts in one convenient place.</p>
       <div className={styles.Boxes}>
         <CardBox
@@ -28,7 +28,7 @@ export default async function Home() {
           href="/contacts"
         />
       </div>
-      <p className={styles.D2}> This tool makes it easy to navigate our network, stay connected, and find the information you need efficiently.</p>
+      <p className={styles.P2}> This tool makes it easy to navigate our network, stay connected, and find the information you need efficiently.</p>
     </div>
   );
 }

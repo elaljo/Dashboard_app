@@ -6,26 +6,37 @@
     gap: 20px;
     font-weight: bold;
 }
-
+@keyframes FadeinH {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
 .HomePage h1 {
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
+    animation: FadeinH 2s ease forwards;
 }
-
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
 .P1{
     font-size: 20px;
     color: rgba(0, 0, 0, 0.7);
     text-align: center;
+    opacity: 0;
     max-width: 800px;
+    animation: fadein 1s ease 1s forwards;
 }
-
-.D2 {
-    text-align: center;
-    max-width: 800px;
-    margin-top: 10px;
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .Boxes{
     margin-top: 30px;
     display: flex;

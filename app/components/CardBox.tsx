@@ -14,7 +14,12 @@ export default function CardBox({ icon, title, description, buttonText, href}: C
         <div className={styles.Box}>
             <div>
                 <div className={styles.agency}>
-                    <img className={styles.svg} src={icon} alt={title} width={50} height={50} /> {title}
+                    <div className={styles.Icon}>
+                        <img className={styles.svg} src={icon} alt={title} width={50} height={50} />
+                    </div>
+                    <div className={styles.title}>
+                        {title}
+                    </div>
                 </div>
                 <div className={styles.boxDetails}>
                     {description}

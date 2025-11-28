@@ -1,9 +1,20 @@
+@keyframes FromUp {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
 .AppName {
     display: inline-block;
     font-weight: bolder;
     font-size: larger;
     padding: 6px 12px;
     transition: all 0.7s ease-in-out;
+    animation: FromUp ease 0.5s forwards;
     border-radius: 10px;
     background: white;
     cursor: pointer;
@@ -18,19 +29,40 @@
     gap: 20px;
     font-weight: bold;
 }
-.li{
+.liAgency{
     padding: 6px 12px;
     border-radius: 10px;
     background: white;
     transition: all 0.3s ease;
     cursor: pointer;
+    animation: FromUp 1s ease forwards;
 
 }
-.li:hover{
+.liAgency{
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: FromUp 1.5s ease forwards;
+}
+.liAgency:hover{
     background: rgba(0, 0, 0, 0.1);
+}
+
+.liContact{
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: FromUp 2s ease forwards;
 
 }
-.signBtn {
+.liContact:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+.signINbtn{
     padding: 5px 12px;
     background: #3175fc;
     color: rgb(255, 255, 255);
@@ -39,6 +71,18 @@
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    animation: FromUp 2s ease forwards;
+}
+.signUPbtn {
+    padding: 5px 12px;
+    background: #3175fc;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: FromUp 2.5s ease forwards;
 }
 .buttons{
     display: flex;

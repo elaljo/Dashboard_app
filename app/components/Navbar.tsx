@@ -18,18 +18,18 @@ export default function Navbar() {
   
         <div className={styles.center}>
           <ul className={styles.ul}>
-            <Link href="/agencies"><li className={styles.li}>Agencies</li></Link>
-            <Link href="/contacts"><li className={styles.li}>Contacts</li></Link>
+            <Link href="/agencies"><li className={styles.liAgency}>Agencies</li></Link>
+            <Link href="/contacts"><li className={styles.liContact}>Contacts</li></Link>
           </ul>
         </div>
   
         <div className={styles.right}>
           <SignedOut>
             <SignInButton>
-              <button className={styles.signBtn}>SIGN IN</button>
+              <button className={styles.signINbtn}>SIGN IN</button>
             </SignInButton>
             <SignUpButton>
-              <button className={styles.signBtn}>SIGN UP</button>
+              <button className={styles.signUPbtn}>SIGN UP</button>
             </SignUpButton>
           </SignedOut>
   

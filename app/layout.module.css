@@ -8,10 +8,9 @@
     left: 0;
     right: 0;
     height: 60px;
-    background: transparent;
     backdrop-filter: blur(15px);
     z-index: 1000;
 }
 .content {
-    margin-top: 60px; /* same as header height */
+    margin-top: 60px;
 }

@@ -38,29 +38,52 @@ LocalStorage for persistent daily usage tracking
 Vercel Deployment
 # 📂 Project Structure
 /
+
 ├── app/
+
 │   ├── layout.tsx
+
 │   ├── page.tsx
+
 │   ├── agencies/
+
 │   │   └── page.tsx
+
 │   ├── contacts/
+
 │   │   └── page.tsx
+
 │   └── components/
+
 │       ├── Navbar.tsx
+
 │       ├── ContactsTable.tsx
+
 │       ├── LimitModal.tsx
+
 │
+
 ├── data/
+
 │   ├── agencies.csv
+
 │   ├── contacts.csv
+
 │
 ├── lib/
+
 │   ├── csvToJson.ts
+
 │
+
 ├── public/
+
 │   └── (static assets)
+
 │
+
 └── README.md
+
 # 📦 Installation & Setup
 ## 1️⃣ Clone Repository
 git clone https://github.com/your-username/your-repo.git

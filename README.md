@@ -1,7 +1,7 @@
 # Dashboard Application – Agencies & Contacts Viewer
-This project is a full-stack dashboard application built with Next.js 16 and Clerk authentication.
+This project is a demo built for a take-home assignment, showcasing authentication, CSV data handling, row-tracking logic, and a clean dashboard experience.
 
-Users can browse agency data and employee contacts, with a daily viewing limit and a clean UI designed for clarity and performance.
+It uses Next.js 16 and Clerk for a simple, modern, and secure setup.
 # 🚀 Features
 
 ## 🔐 User Authentication (Clerk)

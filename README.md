@@ -36,14 +36,43 @@ IntersectionObserver for tracking which rows are viewed
 LocalStorage for persistent daily usage tracking
 
 Vercel Deployment
-# 🧩 System Architecture
-User → Clerk Authentication → Dashboard Home
-         |
-         ↓
-  Agencies Page ← Fetch Local CSV → Display Table
-         |
-         ↓
-  Contacts Page → IntersectionObserver → Track Viewed Rows (localStorage)
-         |
-         ↓
-Modal Triggered After 50 Views → Blur Remaining Contacts
+# 📂 Project Structure
+/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── agencies/
+│   │   └── page.tsx
+│   ├── contacts/
+│   │   └── page.tsx
+│   └── components/
+│       ├── Navbar.tsx
+│       ├── ContactsTable.tsx
+│       ├── LimitModal.tsx
+│
+├── data/
+│   ├── agencies.csv
+│   ├── contacts.csv
+│
+├── lib/
+│   ├── csvToJson.ts
+│
+├── public/
+│   └── (static assets)
+│
+└── README.md
+# 📦 Installation & Setup
+## 1️⃣ Clone Repository
+git clone https://github.com/your-username/your-repo.git
+
+cd your-repo
+## 2️⃣ Install Dependencies
+npm install
+## 3️⃣ Set Up Clerk
+Create a .env.local file:
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key_here
+
+CLERK_SECRET_KEY=your_key_here
+## 4️⃣ Run Development Server
+npm run dev
